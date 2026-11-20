@@ -6,7 +6,7 @@ pipeline {
         DOCKER_IMAGE = 'vinee0311/kubernetes-sample-app'
         IMAGE_TAG = 'latest'
         K8S_NAMESPACE = 'jenkins-poc'
-        K8S_SERVER = 'https://192.168.167.197 :6443'
+        K8S_SERVER = 'https://192.168.167.197:6443'
     }
 
     stages {
