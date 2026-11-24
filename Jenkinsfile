@@ -93,7 +93,7 @@ pipeline {
                         kubectl apply -f nodejs-deployment.yaml
                         kubectl apply -f nodejs-service.yaml
 
-                        kubectl rollout status deployment/nodejs-app \
+                        kubectl rollout status deployment/nodejs-sample-app \
                           -n "$K8S_NAMESPACE" --timeout=180s
 
                         kubectl get pods -n "$K8S_NAMESPACE"
